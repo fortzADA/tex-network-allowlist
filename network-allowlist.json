@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "network": "tex",
+  "updated_at": "2026-11-12T19:23:38Z",
+  "sticky_leader_id": "28b6f40ea607e6aa26cc9fc26092c34a6bd7f72e2ee74093ec29cd4e09daf476",
+  "core": [
+    {
+      "id": "28b6f40ea607e6aa26cc9fc26092c34a6bd7f72e2ee74093ec29cd4e09daf476",
+      "peer": "104.173.195.217:19001",
+      "name": "v1 / sticky leader"
+    },
+    {
+      "id": "3840426d0a561c27e28b724b581ab2af5dc26e6cd7c6edb0b7fae90335f5b724",
+      "peer": "104.173.195.217:19002",
+      "name": "v2"
+    },
+    {
+      "id": "3646de47c3d6717d0d5e92fda89e8c4583830b5d4ed073a0bffeb4187054de1c",
+      "peer": "104.173.195.217:19003",
+      "name": "v3"
+    }
+  ],
+  "validators": [
+    {
+      "id": "28b6f40ea607e6aa26cc9fc26092c34a6bd7f72e2ee74093ec29cd4e09daf476",
+      "peer": "104.173.195.217:19001",
+      "name": "v1 / sticky leader"
+    },
+    {
+      "id": "3840426d0a561c27e28b724b581ab2af5dc26e6cd7c6edb0b7fae90335f5b724",
+      "peer": "104.173.195.217:19002",
+      "name": "v2"
+    },
+    {
+      "id": "3646de47c3d6717d0d5e92fda89e8c4583830b5d4ed073a0bffeb4187054de1c",
+      "peer": "104.173.195.217:19003",
+      "name": "v3"
+    },
+    {
+      "id": "50b1db2ad1ae5e266dff206e6a7ec1afce80dfbf3eec25de287c5e9f970a8446",
+      "peer": "100.76.90.28:19004",
+      "name": "v4 remote"
+    },
+    {
+      "id": "2b24fcfbeb8efed47cb0ee527f7d8c607bb678885ffb7d1e8e6c800fa91ddba0",
+      "peer": "192.168.50.234:19005",
+      "name": "v5"
+    }
+  ],
+  "notes": [
+    "Public trusted validator set + gossip peers (no secrets).",
+    "core = stable bootstrap dial targets for remotes (catch-up). Full validators = voting set.",
+    "New joiners: send pubkey + host:port; after admission, apply this file (TEX_VALIDATORS=all, TEX_CONSENSUS_PEERS=core).",
+    "Public allowlist repo (JSON only): https://github.com/fortzADA/tex-network-allowlist",
+    "Raw: https://raw.githubusercontent.com/fortzADA/tex-network-allowlist/main/network-allowlist.json",
+    "Core-only: https://raw.githubusercontent.com/fortzADA/tex-network-allowlist/main/core-validators.json",
+    "Fetch from a running API: GET /network-allowlist.json \u00b7 GET /core-validators.json"
+  ]
+}

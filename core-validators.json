@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "network": "tex",
+  "updated_at": "2026-11-12T19:23:38Z",
+  "sticky_leader_id": "28b6f40ea607e6aa26cc9fc26092c34a6bd7f72e2ee74093ec29cd4e09daf476",
+  "validators": [
+    {
+      "id": "28b6f40ea607e6aa26cc9fc26092c34a6bd7f72e2ee74093ec29cd4e09daf476",
+      "peer": "104.173.195.217:19001",
+      "name": "v1 / sticky leader"
+    },
+    {
+      "id": "3840426d0a561c27e28b724b581ab2af5dc26e6cd7c6edb0b7fae90335f5b724",
+      "peer": "104.173.195.217:19002",
+      "name": "v2"
+    },
+    {
+      "id": "3646de47c3d6717d0d5e92fda89e8c4583830b5d4ed073a0bffeb4187054de1c",
+      "peer": "104.173.195.217:19003",
+      "name": "v3"
+    }
+  ],
+  "notes": [
+    "Bootstrap dial targets only (core validators).",
+    "Enough for a remote to catch up: set TEX_CONSENSUS_PEERS from this file.",
+    "Still apply network-allowlist.json for the full TEX_VALIDATORS voting set (must include you after admission).",
+    "Raw: https://raw.githubusercontent.com/fortzADA/tex-network-allowlist/main/core-validators.json"
+  ]
+}
